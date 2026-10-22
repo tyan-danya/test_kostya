@@ -1,3 +1,173 @@
-<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>МоторПойнт — заявки и продажи</title><style>
-:root{--bg:#f5f7fb;--ink:#142033;--muted:#718096;--line:#e7ebf2;--blue:#2563eb;--navy:#132238;--green:#16a36a;--amber:#e99821;--red:#dc5b5b;--card:#fff}*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink)}.app{display:flex;min-height:100vh}.side{width:244px;background:var(--navy);color:#d9e1ee;padding:26px 16px;display:flex;flex-direction:column}.brand{font-weight:800;color:#fff;font-size:18px;display:flex;gap:10px;align-items:center;margin:0 10px 38px}.brand i{background:#3b82f6;border-radius:9px;width:28px;height:28px;display:grid;place-items:center;font-style:normal}.nav{display:grid;gap:7px}.nav button{border:0;background:transparent;color:#aab9ce;text-align:left;padding:12px 13px;border-radius:9px;font-size:14px;cursor:pointer}.nav button.active,.nav button:hover{background:#203556;color:#fff}.side-foot{margin-top:auto;font-size:12px;color:#71839e;padding:12px}.main{flex:1;padding:28px 34px;max-width:1500px;margin:auto;width:100%}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}.eyebrow{font-size:12px;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:.08em}.title{font-size:30px;line-height:1.15;margin:7px 0;color:#10233d}.sub{color:var(--muted);font-size:14px}.actions{display:flex;gap:10px}.btn{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 14px;border-radius:8px;font-weight:650;cursor:pointer}.btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-bottom:22px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:0 2px 8px #14203308}.metric{font-size:28px;font-weight:750;margin:8px 0}.metric-label{font-size:13px;color:var(--muted)}.delta{font-size:12px;color:var(--green);font-weight:700}.layout{display:grid;grid-template-columns:1.35fr 1fr;gap:18px}.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;font-size:16px;font-weight:750}.link{font-size:12px;color:var(--blue);cursor:pointer}.pipeline{display:flex;gap:8px;height:178px;align-items:end}.stage{flex:1;display:flex;flex-direction:column;gap:8px;justify-content:end}.stage .bar{background:#dce8ff;border-radius:7px 7px 3px 3px;min-height:25px;position:relative}.stage:nth-child(2) .bar{background:#cfe0ff}.stage:nth-child(3) .bar{background:#b9d2ff}.stage:nth-child(4) .bar{background:#8fb5ff}.stage:nth-child(5) .bar{background:#4e84f1}.stage b{font-size:18px}.stage small{font-size:11px;color:var(--muted)}.table{width:100%;border-collapse:collapse;font-size:13px}.table th{font-size:11px;color:#8a96a8;text-transform:uppercase;letter-spacing:.05em;text-align:left;padding:9px 8px;border-bottom:1px solid var(--line)}.table td{padding:12px 8px;border-bottom:1px solid #f0f2f5}.table tr:last-child td{border:0}.status{display:inline-block;border-radius:20px;padding:5px 8px;font-size:11px;font-weight:700}.s-new{background:#e8f0ff;color:#2861c8}.s-work{background:#fff2d9;color:#a86a06}.s-done{background:#dff7eb;color:#16794f}.s-cancel{background:#fee8e8;color:#b74444}.stock{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #f0f2f5}.stock:last-child{border:0}.stock-icon{width:38px;height:38px;border-radius:9px;background:#edf3ff;display:grid;place-items:center;font-size:18px}.stock-main{flex:1}.stock-main b{font-size:13px;display:block}.stock-main span{font-size:12px;color:var(--muted)}.price{font-weight:750;font-size:13px}.toolbar{display:flex;gap:10px;margin:15px 0}.search{flex:1;border:1px solid var(--line);padding:10px 12px;border-radius:8px;font-size:13px;background:#fff}.modal{display:none;position:fixed;inset:0;background:#14203366;align-items:center;justify-content:center}.modal.open{display:flex}.modal-box{background:#fff;border-radius:14px;padding:24px;width:min(460px,calc(100% - 30px));box-shadow:0 20px 70px #14203333}.modal-box h2{margin-top:0}.form{display:grid;gap:11px}.form label{font-size:12px;color:var(--muted);font-weight:650}.form input,.form select{width:100%;padding:10px;border:1px solid var(--line);border-radius:7px;font:inherit}.form-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:8px}@media(max-width:900px){.side{width:68px;padding:20px 8px}.brand span,.nav button span,.side-foot{display:none}.brand{margin:0 auto 30px}.nav button{text-align:center}.main{padding:22px 16px}.grid{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}}@media(max-width:540px){.top{display:block}.actions{margin-top:15px}.grid{grid-template-columns:1fr 1fr}.table{font-size:12px}.table th:nth-child(3),.table td:nth-child(3){display:none}}
-</style></head><body><div class="app"><aside class="side"><div class="brand"><i>⚙</i><span>МоторПойнт</span></div><nav class="nav"><button class="active"><span>▦ &nbsp;Обзор</span></button><button><span>◌ &nbsp;Заявки</span></button><button><span>▤ &nbsp;Склад</span></button><button><span>₽ &nbsp;Продажи</span></button><button><span>◫ &nbsp;Отчёты</span></button></nav><div class="side-foot">Рабочее пространство<br><b>Авторазбор • Москва</b></div></aside><main class="main"><header class="top"><div><div class="eyebrow">Понедельник, 19 октября</div><h1 class="title">Добрый день, Алексей</h1><div class="sub">Вот что происходит с вашим отделом сегодня</div></div><div class="actions"><button class="btn" id="export">Экспорт</button><button class="btn primary" id="add">＋ Новая заявка</button></div></header><section class="grid"><div class="card"><div class="metric-label">Активные заявки</div><div class="metric">48</div><div class="delta">↑ 12% к прошлой неделе</div></div><div class="card"><div class="metric-label">Продажи за месяц</div><div class="metric">₽ 1,24 млн</div><div class="delta">↑ 8,4% к прошлому месяцу</div></div><div class="card"><div class="metric-label">Средний чек</div><div class="metric">₽ 86 400</div><div class="delta">↑ 5,1% к прошлому месяцу</div></div><div class="card"><div class="metric-label">Конверсия заявок</div><div class="metric">34,8%</div><div class="delta">↑ 2,6 п.п. к прошлой неделе</div></div></section><div class="layout"><section><div class="card"><div class="section-title">Воронка заявок <span class="link">За последние 30 дней⌄</span></div><div class="pipeline"><div class="stage"><b>48</b><div class="bar" style="height:92px"></div><small>Новые</small></div><div class="stage"><b>31</b><div class="bar" style="height:72px"></div><small>В работе</small></div><div class="stage"><b>18</b><div class="bar" style="height:52px"></div><small>Подбор</small></div><div class="stage"><b>12</b><div class="bar" style="height:38px"></div><small>Счёт</small></div><div class="stage"><b>9</b><div class="bar" style="height:28px"></div><small>Продано</small></div></div></div><div class="card" style="margin-top:18px"><div class="section-title">Последние заявки <span class="link">Все заявки →</span></div><div class="toolbar"><input class="search" placeholder="Поиск по клиенту или артикулу…" id="search"><select class="search" style="max-width:150px"><option>Все статусы</option><option>Новые</option><option>В работе</option><option>Продано</option></select></div><table class="table" id="requests"><thead><tr><th>Клиент</th><th>Запрос</th><th>Дата</th><th>Сумма</th><th>Статус</th></tr></thead><tbody><tr><td><b>Илья Петров</b><br><span class="sub">#MP-1048</span></td><td>BMW N47D20</td><td>Сегодня, 11:42</td><td>₽ 145 000</td><td><span class="status s-work">В работе</span></td></tr><tr><td><b>Сергей Орлов</b><br><span class="sub">#MP-1047</span></td><td>АКПП ZF 6HP19</td><td>Сегодня, 10:15</td><td>₽ 78 000</td><td><span class="status s-new">Новая</span></td></tr><tr><td><b>Анна Смирнова</b><br><span class="sub">#MP-1046</span></td><td>VW 1.9 TDI</td><td>Вчера, 18:20</td><td>₽ 98 500</td><td><span class="status s-done">Продано</span></td></tr><tr><td><b>Дмитрий Волков</b><br><span class="sub">#MP-1045</span></td><td>МКПП Ford MTX75</td><td>Вчера, 16:08</td><td>₽ 54 000</td><td><span class="status s-cancel">Отказ</span></td></tr></tbody></table></div></section><aside><div class="card"><div class="section-title">Остатки на складе <span class="link">Открыть склад →</span></div><div class="stock"><div class="stock-icon">🔧</div><div class="stock-main"><b>Двигатели</b><span>24 позиции · 3 в резерве</span></div><div class="price">₽ 3,8 млн</div></div><div class="stock"><div class="stock-icon">⚙️</div><div class="stock-main"><b>Коробки передач</b><span>37 позиций · 5 в резерве</span></div><div class="price">₽ 2,1 млн</div></div><div class="stock"><div class="stock-icon">📦</div><div class="stock-main"><b>Запчасти</b><span>126 позиций · 12 в резерве</span></div><div class="price">₽ 640 тыс.</div></div></div><div class="card" style="margin-top:18px"><div class="section-title">Продажи по категориям</div><div style="height:145px;display:flex;align-items:end;gap:17px;padding:15px 8px 0;border-bottom:1px solid var(--line)"><div style="height:72%;background:#4e84f1;border-radius:6px 6px 0 0;flex:1" title="Двигатели"></div><div style="height:49%;background:#94b7fa;border-radius:6px 6px 0 0;flex:1" title="Коробки"></div><div style="height:25%;background:#d7e4ff;border-radius:6px 6px 0 0;flex:1" title="Запчасти"></div></div><div style="display:flex;justify-content:space-around;color:var(--muted);font-size:11px;padding-top:8px"><span>Двигатели</span><span>Коробки</span><span>Запчасти</span></div></div></aside></div></main></div><div class="modal" id="modal"><div class="modal-box"><h2>Новая заявка</h2><div class="form"><label>Клиент<input id="client" placeholder="Имя клиента"></label><label>Что ищет клиент<input id="item" placeholder="Например, двигатель BMW N47D20"></label><label>Телефон<input placeholder="+7 (___) ___-__-__"></label><label>Статус<select><option>Новая</option><option>В работе</option><option>Подбор</option></select></label><div class="form-actions"><button class="btn" id="close">Отмена</button><button class="btn primary" id="save">Создать заявку</button></div></div></div></div><script>const modal=document.getElementById('modal');document.getElementById('add').onclick=()=>modal.classList.add('open');document.getElementById('close').onclick=()=>modal.classList.remove('open');document.getElementById('save').onclick=()=>{const c=document.getElementById('client').value||'Новый клиент',i=document.getElementById('item').value||'Новый запрос';const row=document.createElement('tr');row.innerHTML=`<td><b>${c}</b><br><span class="sub">#MP-${1050+document.querySelectorAll('#requests tbody tr').length}</span></td><td>${i}</td><td>Только что</td><td>—</td><td><span class="status s-new">Новая</span></td>`;document.querySelector('#requests tbody').prepend(row);modal.classList.remove('open');document.getElementById('client').value='';document.getElementById('item').value=''};document.getElementById('search').oninput=e=>{const q=e.target.value.toLowerCase();document.querySelectorAll('#requests tbody tr').forEach(r=>r.style.display=r.innerText.toLowerCase().includes(q)?'':'none')};document.getElementById('export').onclick=()=>alert('Отчёт подготовлен — в демо-режиме скачивание отключено.');</script></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Мотоэвакуатор — перевозка мотоциклов</title>
+  <meta name="description" content="Перевозка мотоциклов по городу и между регионами. Надёжная фиксация, мотоловушка и рампа для погрузки." />
+  <style>
+    :root{
+      --bg:#0d0f12;--panel:#15181d;--panel2:#1b1f25;--text:#f5f7fa;--muted:#a7adb7;
+      --line:#2a3038;--accent:#ff7a00;--accent2:#ff9a3d;--ok:#55d68b;--radius:20px
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+    a{color:inherit;text-decoration:none}
+    button,input,textarea{font:inherit}
+    .wrap{width:min(1180px,calc(100% - 32px));margin:auto}
+    .nav{position:sticky;top:0;z-index:20;background:#0d0f12dd;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff0d}
+    .nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:900;letter-spacing:.02em;font-size:20px}.brand span{color:var(--accent)}
+    .nav-links{display:flex;gap:22px;color:var(--muted);font-size:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);border-radius:12px;padding:13px 18px;font-weight:800;cursor:pointer;transition:.2s;background:var(--panel);color:var(--text)}
+    .btn:hover{transform:translateY(-1px);border-color:#4a515c}
+    .btn.primary{background:var(--accent);border-color:var(--accent);color:#111}
+    .btn.primary:hover{background:var(--accent2)}
+    .hero{padding:82px 0 58px;background:radial-gradient(circle at 80% 15%,#ff7a0026,transparent 32%)}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:46px;align-items:center}
+    .eyebrow{display:inline-block;color:var(--accent);font-size:13px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+    h1{font-size:clamp(42px,7vw,76px);line-height:.98;margin:0 0 22px;letter-spacing:-.045em}
+    .lead{font-size:20px;color:#c6cbd2;max-width:760px;margin:0 0 28px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+    .facts{display:flex;flex-wrap:wrap;gap:18px;color:var(--muted);font-size:14px}.facts b{color:var(--text)}
+    .hero-card{background:linear-gradient(180deg,#1c2026,#13161a);border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:0 25px 80px #0008}
+    .hero-card .big{font-size:38px;font-weight:900;margin:6px 0}.hero-card p{color:var(--muted);margin:0 0 18px}
+    .price-row{display:flex;justify-content:space-between;padding:14px 0;border-top:1px solid var(--line)}
+    section{padding:72px 0}.section-head{margin-bottom:30px}.section-head h2{font-size:38px;margin:0 0 10px}.section-head p{color:var(--muted);margin:0;max-width:700px}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+    .icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:#ff7a0017;border:1px solid #ff7a0033;font-size:22px;margin-bottom:18px}
+    .card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:var(--muted)}
+    .price-box{display:grid;grid-template-columns:1fr 1fr;gap:18px}.price-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px}.price-card.featured{border-color:#ff7a0066;background:linear-gradient(180deg,#201a14,#15181d)}
+    .price-card strong{font-size:40px;display:block;margin:8px 0}.price-card span{color:var(--muted)}
+    .calc{margin-top:22px;background:var(--panel2);border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:grid;grid-template-columns:1fr auto;gap:26px;align-items:end}
+    label{display:block;font-size:14px;font-weight:800;margin-bottom:8px}.input{width:100%;background:#0f1216;border:1px solid #343b45;color:var(--text);border-radius:12px;padding:14px 15px;outline:none}.input:focus{border-color:var(--accent)}
+    .total{min-width:240px;text-align:right}.total small{color:var(--muted);display:block}.total strong{font-size:42px;line-height:1.1;color:var(--accent)}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:step}.step{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;position:relative}.step:before{counter-increment:step;content:counter(step);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#111;font-weight:900;margin-bottom:18px}
+    .step h3{margin:0 0 8px}.step p{margin:0;color:var(--muted)}
+    .contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px}.contact-info{background:linear-gradient(160deg,#24190f,#15181d);border:1px solid #ff7a0044;border-radius:var(--radius);padding:30px}.contact-info h2{margin-top:0;font-size:38px}.contact-info p{color:#c1c5cb}.contact-info .mini{margin-top:26px;color:var(--muted)}
+    form{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field.full{grid-column:1/-1}textarea.input{min-height:110px;resize:vertical}.success{display:none;margin-top:15px;padding:14px 16px;border-radius:12px;background:#55d68b17;border:1px solid #55d68b55;color:var(--ok);font-weight:800}.success.show{display:block}
+    footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:14px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:900px){.nav-links{display:none}.hero-grid,.contact{grid-template-columns:1fr}.cards,.steps{grid-template-columns:1fr 1fr}.price-box{grid-template-columns:1fr}.hero{padding-top:56px}}
+    @media(max-width:620px){.wrap{width:min(100% - 22px,1180px)}.nav-inner{height:64px}.nav .btn{padding:10px 12px}.hero{padding:44px 0 36px}h1{font-size:44px}.lead{font-size:17px}.hero-actions{display:grid}.hero-actions .btn{width:100%}.cards,.steps,.form-grid{grid-template-columns:1fr}.calc{grid-template-columns:1fr}.total{text-align:left;min-width:0}.section-head h2,.contact-info h2{font-size:31px}section{padding:54px 0}.price-card strong{font-size:34px}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">МОТО<span>ЭВАКУАТОР</span></div>
+      <nav class="nav-links"><a href="#advantages">Преимущества</a><a href="#price">Цены</a><a href="#how">Как работаем</a><a href="#request">Заявка</a></nav>
+      <a class="btn primary" href="#request">Заказать</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Перевозка мотоциклов</span>
+          <h1>Мотоэвакуатор по городу и регионам</h1>
+          <p class="lead">Перевозим любые мотоциклы. Используем прицеп с мотоловушкой, рампой для погрузки и надёжной фиксацией грузовыми стяжками.</p>
+          <div class="hero-actions">
+            <a href="#price" class="btn primary">Рассчитать стоимость</a>
+            <a href="#request" class="btn">Оставить заявку</a>
+          </div>
+          <div class="facts"><span>✓ <b>Любые мотоциклы</b></span><span>✓ <b>Надёжная фиксация</b></span><span>✓ <b>Межгород</b></span></div>
+        </div>
+        <aside class="hero-card">
+          <div style="color:var(--muted)">Стоимость перевозки</div>
+          <div class="big">от 2 500 ₽</div>
+          <p>Прозрачный расчёт без сложных тарифов.</p>
+          <div class="price-row"><span>По городу</span><b>2 500 ₽</b></div>
+          <div class="price-row"><span>За городом</span><b>+ 40 ₽/км</b></div>
+          <div class="price-row"><span>Расчёт километров</span><b>до места доставки</b></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="advantages">
+      <div class="wrap">
+        <div class="section-head"><h2>Почему удобно</h2><p>Всё необходимое для безопасной перевозки мотоцикла уже есть на прицепе.</p></div>
+        <div class="cards">
+          <article class="card"><div class="icon">🏍️</div><h3>Любые мотоциклы</h3><p>Перевозим дорожные, спортивные, туристические и другие мотоциклы.</p></article>
+          <article class="card"><div class="icon">🔒</div><h3>Надёжная фиксация</h3><p>Мотоцикл фиксируется грузовыми стяжками и остаётся устойчивым в дороге.</p></article>
+          <article class="card"><div class="icon">↗️</div><h3>Удобная погрузка</h3><p>Для заезда на прицеп используется рампа, а переднее колесо ставится в мотоловушку.</p></article>
+          <article class="card"><div class="icon">🛣️</div><h3>Город и регионы</h3><p>Работаем как по городу, так и с перевозками на дальние расстояния.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="price">
+      <div class="wrap">
+        <div class="section-head"><h2>Стоимость</h2><p>Базовая цена и простой расчёт для поездок за город.</p></div>
+        <div class="price-box">
+          <div class="price-card"><span>Перевозка по городу</span><strong>2 500 ₽</strong><span>Фиксированная базовая стоимость.</span></div>
+          <div class="price-card featured"><span>Перевозка за городом</span><strong>2 500 ₽ + 40 ₽/км</strong><span>Километры считаются до места доставки.</span></div>
+        </div>
+        <div class="calc">
+          <div>
+            <label for="distance">Расстояние до места доставки, км</label>
+            <input class="input" id="distance" type="number" min="0" value="35" placeholder="Например, 35" />
+          </div>
+          <div class="total"><small>Ориентировочная стоимость</small><strong id="total">3 900 ₽</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <div class="section-head"><h2>Как проходит перевозка</h2><p>Четыре понятных шага от заявки до доставки.</p></div>
+        <div class="steps">
+          <article class="step"><h3>Оставляете заявку</h3><p>Указываете имя, телефон и маршрут перевозки.</p></article>
+          <article class="step"><h3>Согласовываем маршрут</h3><p>Уточняем адрес погрузки, доставки и удобное время.</p></article>
+          <article class="step"><h3>Фиксируем мотоцикл</h3><p>Устанавливаем его в мотоловушку и закрепляем стяжками.</p></article>
+          <article class="step"><h3>Доставляем</h3><p>Привозим мотоцикл в согласованное место назначения.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="request">
+      <div class="wrap contact">
+        <div class="contact-info">
+          <h2>Оставить заявку</h2>
+          <p>Заполните форму. На этой учебной версии данные пока никуда не отправляются — после отправки мы просто покажем подтверждение.</p>
+          <div class="mini">На следующем этапе можно подключить Telegram, WhatsApp, CRM или настоящий сервер.</div>
+        </div>
+        <form id="requestForm">
+          <div class="form-grid">
+            <div class="field"><label for="name">Имя</label><input class="input" id="name" required placeholder="Константин" /></div>
+            <div class="field"><label for="phone">Телефон</label><input class="input" id="phone" required placeholder="+7 999 000-00-00" /></div>
+            <div class="field"><label for="from">Откуда забрать</label><input class="input" id="from" required placeholder="Адрес погрузки" /></div>
+            <div class="field"><label for="to">Куда доставить</label><input class="input" id="to" required placeholder="Адрес доставки" /></div>
+            <div class="field full"><label for="comment">Комментарий</label><textarea class="input" id="comment" placeholder="Марка мотоцикла, удобное время и другие детали"></textarea></div>
+            <div class="field full"><button class="btn primary" style="width:100%" type="submit">Отправить заявку</button></div>
+          </div>
+          <div class="success" id="success">✓ Заявка принята. Это демо-версия, поэтому данные пока не отправляются на сервер.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-inner"><span>© Мотоэвакуатор</span><span>Учебный проект в GitHub</span></div></footer>
+
+  <script>
+    const distance=document.getElementById('distance');
+    const total=document.getElementById('total');
+    function updatePrice(){
+      const km=Math.max(0,Number(distance.value)||0);
+      const price=2500+km*40;
+      total.textContent=new Intl.NumberFormat('ru-RU').format(price)+' ₽';
+    }
+    distance.addEventListener('input',updatePrice);
+    updatePrice();
+
+    const form=document.getElementById('requestForm');
+    const success=document.getElementById('success');
+    form.addEventListener('submit',e=>{
+      e.preventDefault();
+      success.classList.add('show');
+      success.scrollIntoView({behavior:'smooth',block:'nearest'});
+    });
+  </script>
+</body>
+</html>
